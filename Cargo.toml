@@ -1,0 +1,17 @@
+[package]
+name = "seanboard"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+apriltag = "0.4.0"
+apriltag-image = "0.1.0"
+anyhow = "1.0.42"
+image = "0.24.5"
+mat2image = { git = "https://github.com/rcastill/mat2image.git", features = ["rayon"] }
+opencv = { version = "=0.88.6", default-features = false, features = ["rgb", "video", "highgui", "imgproc", "videoio"] }
+lazy_static = "1.4.0"
+serde = { version = "1.0.152", features = ["derive"] }
+tokio = { version = "1.36.0", default-features = false, features = ["time"] }
